@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { FoodController } from "../controllers/FoodController";
-import { validateRequest } from "@munlib/common";
 import { FoodValidators } from "../validators/FoodValidators";
 
 export class FoodRouter {
@@ -18,7 +17,6 @@ export class FoodRouter {
         this.router.get(
             "/nearby",
             FoodValidators.nearby,
-            validateRequest,
             FoodController.findNearbyTrucks
         );
 

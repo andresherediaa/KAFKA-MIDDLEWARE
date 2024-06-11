@@ -20,7 +20,7 @@ export class FoodController {
     }
 
     static async getAPIData() {
-        const filePath = path.resolve(__dirname, '../data', 'data.csv');
+        const filePath = path.resolve(__dirname, '../../data', 'data.csv');
         const results = await createCsvReadStream(filePath);
         return results;
     }
