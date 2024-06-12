@@ -80,6 +80,24 @@ Follow the steps below to set up and run the project locally.
     npm run start
     ```
 
+## Running the Project with Docker
+
+The Node.js project has a Docker image that is already published on Docker Hub and ready to be used without the need for any configuration or installing Node.js. To use it, you can pull the Docker image using the following command:
+
+```sh
+docker pull 23131232131231231/api-food-sf:v1
+
+Deploying the Docker Image Locally
+To deploy the Docker image locally, follow these steps:
+
+### Pull the Docker image
+docker pull 23131232131231231/api-food-sf:v1
+Run the Docker container, mapping port 3000 of the container to port 3000 of the host:
+docker run -p 3000:3000 23131232131231231/api-food-sf:v1
+
+Your API will now be running and accessible at http://localhost:3000. This setup ensures that the API is fully functional without needing to install any dependencies or configure the environment manually.
+
+
 ### Usage
 
 Once the project is running, the API will be ready to use. You can start making requests to the various endpoints provided by the API.
