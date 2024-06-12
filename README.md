@@ -84,16 +84,18 @@ Follow the steps below to set up and run the project locally.
 
 The Node.js project has a Docker image that is already published on Docker Hub and ready to be used without the need for any configuration or installing Node.js. To use it, you can pull the Docker image using the following command:
 
-```sh
-docker pull 23131232131231231/api-food-sf:v1
+`sh
+docker pull 23131232131231231/api-food-sf:v1`
 
 Deploying the Docker Image Locally
 To deploy the Docker image locally, follow these steps:
 
 ### Pull the Docker image
-docker pull 23131232131231231/api-food-sf:v1
+`docker pull 23131232131231231/api-food-sf:v1`
+
 Run the Docker container, mapping port 3000 of the container to port 3000 of the host:
-docker run -p 3000:3000 23131232131231231/api-food-sf:v1
+
+`docker run -p 3000:3000 23131232131231231/api-food-sf:v1`
 
 Your API will now be running and accessible at http://localhost:3000. This setup ensures that the API is fully functional without needing to install any dependencies or configure the environment manually.
 
@@ -118,8 +120,3 @@ This project is licensed under the MIT License.
 ---
 
 By following these instructions, you should be able to set up and run the **API-SF-Mobile-Food** project on your local machine. Enjoy using the API!
-
-
-
-
-
