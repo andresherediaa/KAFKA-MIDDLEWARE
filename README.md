@@ -29,7 +29,7 @@ This endpoint retrieves food trucks within a certain radius of the specified loc
 
 ```http
 GET http://localhost:3000/api/v1/nearby?latitude=37.72400910654023&longitude=-122.3929867825778&radius=1&number_trucks=2
-
+```
 
 ## Advanced Food Truck Search
 
