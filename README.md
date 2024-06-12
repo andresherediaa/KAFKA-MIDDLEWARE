@@ -37,6 +37,63 @@ Example Usage:
 GET http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC
 This request will retrieve food trucks offering rice food at 11 AM, at the specified address
 
+# API-SF-Mobile-Food
+
+## Introduction
+
+Welcome to the **API-SF-Mobile-Food** project! This is a Node.js REST API designed to help you find nearby food trucks and perform advanced searches based on food type, schedule, and address.
+
+## Getting Started
+
+Follow the steps below to set up and run the project locally.
+
+### Prerequisites
+
+- Ensure you have Node.js installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/andresherediaa/API-SF-Mobile-Food.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```sh
+    cd API-SF-Mobile-Food
+    ```
+
+3. **Install the Node.js modules:**
+    ```sh
+    npm install
+    ```
+
+4. **Run the project:**
+    ```sh
+    npm run start
+    ```
+
+### Usage
+
+Once the project is running, the API will be ready to use. You can start making requests to the various endpoints provided by the API.
+
+## Features
+
+- **Find Nearby Trucks**: Locate food trucks near a given location.
+- **Advanced Search**: Search food trucks based on food type, schedule, and address.
+
+## Contributing
+
+If you would like to contribute to this project, feel free to create pull requests or open issues on the [GitHub repository](https://github.com/andresherediaa/API-SF-Mobile-Food).
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+By following these instructions, you should be able to set up and run the **API-SF-Mobile-Food** project on your local machine. Enjoy using the API!
+
 
 
 
