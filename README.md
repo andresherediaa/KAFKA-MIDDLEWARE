@@ -49,8 +49,8 @@ This endpoint allows users to perform an advanced search for food trucks based o
 Users can perform a customized search for food trucks based on specific criteria such as food type, schedule, and address. If no parameters are provided, the endpoint will return all available food trucks.
 
 ### Example Usage:
-```http
-GET http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC
+`http
+GET http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC`
 
 Follow the steps below to set up and run the project locally.
 
