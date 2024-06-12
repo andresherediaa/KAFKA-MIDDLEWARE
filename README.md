@@ -84,7 +84,7 @@ Follow the steps below to set up and run the project locally.
 
 The Node.js project has a Docker image that is already published on Docker Hub and ready to be used without the need for any configuration or installing Node.js. To use it, you can pull the Docker image using the following command:
 
-`sh
+`
 docker pull 23131232131231231/api-food-sf:v1`
 
 Deploying the Docker Image Locally
