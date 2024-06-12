@@ -27,8 +27,8 @@ This endpoint retrieves food trucks within a certain radius of the specified loc
 
 ### Example Usage:
 
-```http
-GET http://localhost:3000/api/v1/nearby?latitude=37.72400910654023&longitude=-122.3929867825778&radius=1&number_trucks=2
+`http
+GET http://localhost:3000/api/v1/nearby?latitude=37.72400910654023&longitude=-122.3929867825778&radius=1&number_trucks=2`
 
 
 ## Advanced Food Truck Search
@@ -46,6 +46,61 @@ This endpoint allows users to perform an advanced search for food trucks based o
 **NOTE:** All these parameters are optional. If none of them are provided, all available food trucks are returned.
 
 ### Description:
+Users can perform a customized search for food trucks based on specific criteria such as food type, schedule, and address. If no parameters are provided, the endpoint will return all available food trucks.
+
+### Example Usage:
+```http
+GET http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC
+
+Follow the steps below to set up and run the project locally.
+
+### Prerequisites
+
+- Ensure you have Node.js installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/andresherediaa/API-SF-Mobile-Food.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```sh
+    cd API-SF-Mobile-Food
+    ```
+
+3. **Install the Node.js modules:**
+    ```sh
+    npm install
+    ```
+
+4. **Run the project:**
+    ```sh
+    npm run start
+    ```
+
+### Usage
+
+Once the project is running, the API will be ready to use. You can start making requests to the various endpoints provided by the API.
+
+## Features
+
+- **Find Nearby Trucks**: Locate food trucks near a given location.
+- **Advanced Search**: Search food trucks based on food type, schedule, and address.
+
+## Contributing
+
+If you would like to contribute to this project, feel free to create pull requests or open issues on the [GitHub repository](https://github.com/andresherediaa/API-SF-Mobile-Food).
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+By following these instructions, you should be able to set up and run the **API-SF-Mobile-Food** project on your local machine. Enjoy using the API!
+
 
 
 
