@@ -19,7 +19,7 @@ GET http://localhost:3000/api/v1/nearby?latitude=37.72400910654023&longitude=-12
 This request will retrieve the two closest food trucks within a 1-kilometer radius of the specified location.
 
 2. Advanced Food Truck Search
-Endpoint: /api/v1/foodtrucks/search
+Endpoint: http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC
 This endpoint allows users to perform an advanced search for food trucks based on various parameters.
 
 Parameters:
@@ -27,10 +27,16 @@ Parameters:
 foodType: The type of food offered by the food trucks.
 schedule: The schedule or hours of operation of the food trucks.
 address: The address or location of the food trucks.
+NOTE: All these parameters are optional, if none of them are provided, all available food trucks are returned
+
 Description:
 
 Users can perform a customized search for food trucks based on specific criteria such as food type, schedule, and address. If no parameters are provided, the endpoint will return all available food trucks.
 Example Usage:
 
-GET http://localhost:3000/api/v1/foodtrucks/search?foodType=&schedule=11AM&address=
-This request will retrieve food trucks offering food at 11 AM, regardless of food type or location.
+GET http://localhost:3000/api/v1/foodtrucks/search?foodType=rice&schedule=11AM&address=MASONIC
+This request will retrieve food trucks offering rice food at 11 AM, at the specified address
+
+
+
+
