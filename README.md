@@ -109,6 +109,21 @@ Once the project is running, the API will be ready to use. You can start making 
 - **Find Nearby Trucks**: Locate food trucks near a given location.
 - **Advanced Search**: Search food trucks based on food type, schedule, and address.
 
+## Future Implementations
+
+### User Reviews and Ratings
+- Enable users to leave reviews and rate food trucks.
+- Display average ratings and reviews for each food truck.
+
+### Favorite Food Trucks
+- Allow users to mark food trucks as favorites.
+- Provide a personalized list of favorite food trucks for each user.
+
+### Integration with Maps Services
+- Integrate with services like Google Maps or Mapbox for better location services.
+- Provide directions to the nearest food truck from the user's current location.
+
+
 ## Contributing
 
 If you would like to contribute to this project, feel free to create pull requests or open issues on the [GitHub repository](https://github.com/andresherediaa/API-SF-Mobile-Food).
