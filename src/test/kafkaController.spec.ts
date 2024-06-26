@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express, { Application } from 'express';
-import { FoodRouter } from '../routes/FoodRouter';
+import { FoodRouter } from '../routes/KafkaRouter';
 
 describe('FoodController', () => {
     let app: Application;

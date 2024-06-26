@@ -1,10 +1,16 @@
 import { App } from "./app";
-const server = new App().app;
+
+const app = new App();
 const port: number = 3000;
 
 const start = async () => {
-  server.listen(3000, () => {
-    console.log("Listening on port 3000 Search");
-  });
+  app.listen(port);
+
+  // List of topics to subscribe
+  const topics = ['noticias', 'deudas'];
+  
+  // Setup Kafka Consumer with dynamic topics
+  app.setupKafkaConsumer(topics);
 };
+
 start();

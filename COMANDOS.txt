@@ -1,0 +1,17 @@
+#instalr el kafka
+
+
+#crea topicos
+docker exec -it kafka kafka-topics --create --topic noticias --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+docker exec -it kafka kafka-topics --create --topic reclamos --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+docker exec -it kafka kafka-topics --create --topic deudas --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+
+#creatw mwaaG INTO topic
+docker exec -it kafka kafka-console-producer --topic reclamos --bootstrap-server localhost:9092
+
+#VERIFICA MENSAJES
+docker exec -it kafka kafka-console-consumer --topic noticias --bootstrap-server localhost:9092 --partition 0 --from-beginning
+docker exec -it kafka kafka-console-consumer --topic noticias --bootstrap-server localhost:9092 --partition 1 --from-beginning
+docker exec -it kafka kafka-console-consumer --topic noticias --bootstrap-server localhost:9092 --partition 2 --from-beginning
+
+

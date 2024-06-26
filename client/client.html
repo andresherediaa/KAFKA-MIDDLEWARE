@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafka + Socket.IO Example</title>
+</head>
+<body>
+    <h1>NOTIFICACIONES MIDDLEWARE SCRIPT</h1>
+    <div id="messages"></div>
+
+    <script src="https://cdn.socket.io/4.3.1/socket.io.min.js"></script>
+    <script>
+        const socket = io('http://localhost:3000');
+        
+        //nos suscribimos al canal de notificaciones deseado
+        socket.emit('subscribe', "noticias");
+        socket.emit('subscribe', "deudas");
+
+        socket.on('connect', () => {
+            console.log('Connected to Socket.IO server');
+        });
+        
+        socket.on('message', (data) => {
+            const { topic, value } = data;
+            console.log( JSON.parse(value));
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.innerHTML += `<p><strong>${topic}:</strong> ${value}</p>`;
+        });
+    </script>
+</body>
+</html>
